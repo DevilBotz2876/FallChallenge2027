@@ -32,7 +32,6 @@ public class RobotContainer {
       }
       FileReader propertiesFile = new FileReader(configPath + "/robot_config.properties");
       robotProperties.load(propertiesFile);
-      // System.out.println(simulationProperties.toString());
       propertiesFile.close();
     } catch (Exception e) {
       System.out.println(e);
