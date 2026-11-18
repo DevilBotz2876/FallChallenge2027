@@ -1,3 +1,7 @@
+package frc.robot.subsystems.interfaces;
+
+import edu.wpi.first.math.controller.SimpleMotorFeedforward;
+
 public interface Telescope {
     public static class TelescopeSettings {
     
@@ -10,22 +14,23 @@ public interface Telescope {
             0, 0, 0);
 
 
-    // Returns the length of the telescope
-    public default double getCurrentLength();
-
-    // Sets the target length of the telescope
-    public default void setTargetLength(double length);
-
-    // Returns the target length
-    public default double getTargetLength();
-
-    // Checks if the target length has been reached
-    public default boolean isAtSetpoint();
     
-    // Returns the current velocity of the telescope
-    public default double getCurrentVelocity();
-
-    // Returns the telescope's settings
-    public default TelescopeSettings getSettings();
     }
+// Returns the length of the telescope
+public double getCurrentLength();
+
+// Sets the target length of the telescope
+public void setTargetLength(double length);
+
+// Returns the target length
+public double getTargetLength();
+
+// Checks if the target length has been reached
+public boolean isAtSetpoint();
+
+// Returns the current velocity of the telescope
+public double getCurrentVelocity();
+
+// Returns the telescope's settings
+public TelescopeSettings getSettings();    
 }
