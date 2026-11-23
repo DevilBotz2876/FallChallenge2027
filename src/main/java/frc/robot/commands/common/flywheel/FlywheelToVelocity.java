@@ -11,7 +11,7 @@ public class FlywheelToVelocity extends Command {
   Flywheel flywheel;
   DoubleSupplier velocityRPM;
   double targetVelocity;
-
+ 
   /** Sets speed of a flywheel in RPM. */
   public FlywheelToVelocity(Flywheel flywheel, DoubleSupplier velocityRPM) {
     this.flywheel = flywheel;
