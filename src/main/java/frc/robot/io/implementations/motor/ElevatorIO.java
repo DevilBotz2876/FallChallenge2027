@@ -39,5 +39,17 @@ public class ElevatorIO implements Elevator {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getSettings'");
     }
+
+    @Override
+    public double getMinHeight() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getMinHeight'");
+    }
+
+    @Override
+    public double getMaxHeight() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getMaxHeight'");
+    }
     
 }

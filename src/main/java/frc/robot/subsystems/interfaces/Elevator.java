@@ -29,4 +29,10 @@ public double getCurrentVelocity();
 
 // Returns the elevator's settings
 public ElevatorSettings getSettings();
+
+// Returns the min height of the elevator
+public double getMinHeight();
+
+// Returns the max height of the elevator
+public double getMaxHeight();
 }
