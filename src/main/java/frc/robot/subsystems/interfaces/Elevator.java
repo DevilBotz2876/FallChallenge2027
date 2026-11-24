@@ -1,11 +1,13 @@
 package frc.robot.subsystems.interfaces;
 
+import java.util.function.DoubleSupplier;
+
 import edu.wpi.first.math.controller.SimpleMotorFeedforward;
 
 public interface Elevator {
     public static class ElevatorSettings {
-    double minHeight;
-    double maxHeight;
+    public double minHeight;
+    public double maxHeight;
     double setpointPositionTolerance;
 
      public SimpleMotorFeedforward feedforward =
@@ -16,7 +18,7 @@ public interface Elevator {
 public double getCurrentHeight();
 
 // Sets the target height of the elevator
-public void setTargetHeight(double height);
+public void setTargetHeight(DoubleSupplier targetHeight);
 
 // Returns the target height of the elevator
 public double getTargetHeight();
@@ -29,10 +31,4 @@ public double getCurrentVelocity();
 
 // Returns the elevator's settings
 public ElevatorSettings getSettings();
-
-// Returns the min height of the elevator
-public double getMinHeight();
-
-// Returns the max height of the elevator
-public double getMaxHeight();
 }

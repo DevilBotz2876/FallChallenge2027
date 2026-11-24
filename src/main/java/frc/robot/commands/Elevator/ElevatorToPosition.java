@@ -9,10 +9,9 @@ import frc.robot.subsystems.interfaces.Elevator;
 
 class ElevatorToPosition extends Command{
     public Elevator elevator;
-    public DoubleSupplier speed;
-    public double TargetHeight;
+    public DoubleSupplier TargetHeight;
 
-    public ElevatorToPosition(Elevator elevator, double TargetHeight){
+    public ElevatorToPosition(Elevator elevator, DoubleSupplier TargetHeight){
         this.elevator = elevator;
         this.TargetHeight = TargetHeight;
         addRequirements((Subsystem) elevator);
